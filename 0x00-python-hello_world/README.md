@@ -4,4 +4,7 @@
 **Task1.Run inline
    Write a Shell script that runs Python code.The Python code will be saved in the environment variable $PYCODE
 
+**Task2.Hello, print
+  Write a Python script that prints text exactly
+
 
