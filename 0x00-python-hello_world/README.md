@@ -16,4 +16,7 @@
 **Task5.Print string
   Complete source code
 
+**Task6.Play with strings
+  Complete source code
+
 
