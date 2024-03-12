@@ -19,4 +19,7 @@
 **Task6.Play with strings
   Complete source code
 
+**Task7.Copy-Cut-Paste
+  Complete source code
+
 
