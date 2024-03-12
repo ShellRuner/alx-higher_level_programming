@@ -7,4 +7,5 @@
 **Task2.Hello, print
   Write a Python script that prints text exactly
 
-
+**Task3.Print integer
+  Complete source code
