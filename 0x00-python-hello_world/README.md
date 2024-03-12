@@ -28,4 +28,8 @@
 **Task9.Easter Egg
   Print The Zen of Python
 
+**Task10.
+
+**Task11.Hello, write
+  Write a python script with sys module
 
