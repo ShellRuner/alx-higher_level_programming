@@ -25,4 +25,7 @@
 **Task8.Create a new sentence
   Complete source code
 
+**Task9.Easter Egg
+  Print The Zen of Python
+
 
