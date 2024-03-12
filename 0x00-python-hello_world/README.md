@@ -13,4 +13,7 @@
 **Task4.Print float
   Complete source code
 
+**Task5.Print string
+  Complete source code
+
 
