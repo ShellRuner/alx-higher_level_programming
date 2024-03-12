@@ -22,4 +22,7 @@
 **Task7.Copy-Cut-Paste
   Complete source code
 
+**Task8.Create a new sentence
+  Complete source code
+
 
