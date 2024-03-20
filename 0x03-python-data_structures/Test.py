@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-sentence = None
+sentence = []
 print(len(sentence))
