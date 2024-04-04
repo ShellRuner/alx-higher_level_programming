@@ -7,8 +7,11 @@ class Square:
     Attributes:
         None
     """
-    pass
-
-    """A placeholder that does anything
-    Nothing happen
-    """
+    def __init__(self):
+        """A docstring  on the --init__ method
+        Initializatio
+        """
+        pass
+        """A placeholder that does anything
+        Nothing happen
+        """
