@@ -8,3 +8,7 @@ class Square:
         None
     """
     pass
+
+    """A placeholder that does anything
+    Nothing happen
+    """
