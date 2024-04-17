@@ -16,3 +16,6 @@ except Exception as e:
 
 my_square_2 = Square(5)
 print("Area: {}".format(my_square_2.area()))
+
+my_square_3 = Square()
+print("Area: {}".format(my_square_3.area()))
