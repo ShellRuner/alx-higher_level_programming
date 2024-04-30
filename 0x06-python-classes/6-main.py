@@ -17,11 +17,16 @@ my_square_3.my_print()
 print("--")
 
 my_square_3 = Square(3, (0,3))
-my_square_3.my_print()
+my_square_3.position = (0,3)
+#my_square_3.my_print()
 
 print("--")
 
 my_square_3 = Square(3, (1,'3'))
+#try:
+#    my_square_3.position = (1, '3')
+#except TypeError as e:
+#    print(e)
+#print("--")
 my_square_3.my_print()
 
-print("--")
