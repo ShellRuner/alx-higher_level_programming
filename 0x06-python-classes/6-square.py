@@ -36,6 +36,7 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
+        self.__size = value
 
     @property
     def position(self):
@@ -44,18 +45,18 @@ class Square:
         """
         return self.__position
 
-#    @position.setter
-#    def position(self, value):
-#        """A function that allows to set the square position
-#        Args:
-#            value (int, int) : set the position
-#        """
-#        v = value
-#        if not isinstance(v, tuple) or len(v) != 2:
-#            raise TypeError("position must be a tuple of 2 positive integers")
-#        if not all(isinstance(i, int) for i in v) or not all(i >= 0 for i in v):
-#            raise TypeError("position must be a tuple of 2 positive integers")
-#        self.__position = value
+    @position.setter
+    def position(self, value):
+        """A function that allows to set the square position
+        Args:
+            value (int, int) : set the position
+        """
+        v = value
+        if not isinstance(v, tuple) or len(v) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not all(isinstance(i, int) for i in v) or not all(i >= 0 for i in v):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     def my_print(self):
         """A public instance method that allows to print
@@ -95,17 +96,16 @@ class Square:
                 for i in range(self.__size):
                     print(" " * self.__position[0] + "#" * self.__size)
 
-    @position.setter
-    def position(self, value):
-        """A function that allows to set the square position
-        Args:
-            value (int, int) : set the position
-        """
-        v = value
-        if not isinstance(v, tuple) or len(v) != 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif not all(isinstance(i, int) for i in v) or not all(i >= 0 for i in v):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.my_print()
-        self.__position = value
+#    @position.setter
+#    def position(self, value):
+#        """A function that allows to set the square position
+#        Args:
+#            value (int, int) : set the position
+#        """
+#        v = value
+#        if not isinstance(v, tuple) or len(v) != 2:
+#            raise TypeError("position must be a tuple of 2 positive integers")
+#        elif not all(isinstance(i, int) for i in v) or not all(i >= 0 for i in v):
+#            raise TypeError("position must be a tuple of 2 positive integers")
+#        else:
+#            self.__position = value
