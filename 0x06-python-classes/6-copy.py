@@ -61,9 +61,50 @@ class Square:
         """A public instance method that allows to print
         in stdout the square with the character "#"
         """
-        if self.__size == 0:
-            print(" ")
-        [print('') for _ in range(0, self.__position[1])]
-        for i in range(0, self.__size):
-            print(" " * self.position[0], end='')
-            print("#" * self.__size)
+        if self.__position[0] == 0 and self.__position[1] == 0:
+            if self.size == 0:
+                print("")
+            for i in range(self.size):
+                print("#" * self.size)
+
+        if self.__position[1] > 0 and self.__position[0] > 0:
+            for i in range(self.__position[1]):
+                print("")
+            if self.__size == 0:
+                print(" " * self.position[0], end="")
+                print("")
+            elif self.__size > 0:
+                for i in range(self.__size):
+                    print(" " * self.__position[0] + "#" * self.size)
+
+        if self.__position[0] == 0 and self.__position[1] > 0:
+            for i in range(self.__position[1]):
+                print("")
+
+            if self.__size == 0:
+                print("")
+            elif self.__size > 0:
+                for i in range(self.__size):
+                    print("#" * self.__size)
+
+        if self.__position[0] > 0 and self.__position[1] == 0:
+            if self.__size == 0:
+                print(" " * self.__position[1], end="")
+                print("")
+            elif self.__size > 0:
+                for i in range(self.__size):
+                    print(" " * self.__position[0] + "#" * self.__size)
+
+#    @position.setter
+#    def position(self, value):
+#        """A function that allows to set the square position
+#        Args:
+#            value (int, int) : set the position
+#        """
+#        v = value
+#        if not isinstance(v, tuple) or len(v) != 2:
+#            raise TypeError("position must be a tuple of 2 positive integers")
+#        elif not all(isinstance(i, int) for i in v) or not all(i >= 0 for i in v):
+#            raise TypeError("position must be a tuple of 2 positive integers")
+#        else:
+#            self.__position = value
