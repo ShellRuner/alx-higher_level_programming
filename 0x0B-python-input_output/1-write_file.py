@@ -10,4 +10,4 @@ def write_file(filename="", text=""):
         myfile.write(text)
         nb = myfile.tell()
 
-    return nb + 1
+    return nb
