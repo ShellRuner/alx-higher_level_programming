@@ -45,22 +45,22 @@ class Rectangle:
 
     def area(self):
         """allow to Calculate the area"""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter(self):
         """Allows to calculate the perimeter"""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            return (self.width + self.height) * 2
+            return (self.__width + self.__height) * 2
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Compare rectangles"""
         if not isinstance(rect_1, Rectangle):
-            raise TypeError('rect_1 must be an instance of rectangle')
+            raise TypeError('rect_1 must be an instance of Rectangle')
         if not isinstance(rect_2, Rectangle):
-            raise TypeError('rect_2 must be an instance of rectangle')
+            raise TypeError('rect_2 must be an instance of Rectangle')
         if rect_1.area() >= rect_2.area():
             return rect_1
         else:
