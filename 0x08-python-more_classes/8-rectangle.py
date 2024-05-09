@@ -54,6 +54,18 @@ class Rectangle:
         else:
             return (self.width + self.height) * 2
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Compare rectangles"""
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError('rect_1 must be an instance of rectangle')
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError('rect_2 must be an instance of rectangle')
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        else:
+            return rect_2
+
     def __str__(self):
         """The function that print the rectangle"""
         if self.width == 0 or self.height == 0:
@@ -75,14 +87,3 @@ class Rectangle:
         """
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        """Compare rectangles"""
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError('rect_1 must be an instance of rectangle')
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError('rect_2 must be an instance of rectangle')
-        if rect_1.area() >= rect_2.area():
-            return rect_1
-        return rect_2
