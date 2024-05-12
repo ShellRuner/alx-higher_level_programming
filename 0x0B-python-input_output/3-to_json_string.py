@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """Contain a function"""
+import json
 
 
 def to_json_string(my_obj):
